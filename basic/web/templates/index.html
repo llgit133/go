@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>这是go web程序</title>
+    <link rel="stylesheet" href="basic/web/static/css/style.css">
+    <script src="/basic/web/static/js/common.js"></script>
+</head>
+<body>
+
+<h1>后端传的数据为{{.msg}}</h1>
+<h1>后端传的数据为{{.userId}}+{{.userName}}</h1>
+
+
+<!--4 表单-->
+<form action="/user/add" method="post">
+    <p>username: <input type="text" name="username"></p>
+    <p>password: <input type="text" name="password"></p>
+    <button type="submit">提交</button>
+</form>
+
+
+
+</body>
+</html>
